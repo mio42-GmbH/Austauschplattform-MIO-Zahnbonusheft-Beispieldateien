@@ -1,0 +1,156 @@
+﻿<Bundle xmlns="http://hl7.org/fhir" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <id value="F748FAF0-3AC0-43AF-8D1F-A2DF281195D0"/>
+  <meta>
+    <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ZAEB_Bundle|1.1.0"/>
+  </meta>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:uuid:F748FAF0-3AC0-43AF-8D1F-A2DF281195D0"/>
+  </identifier>
+  <type value="document"/>
+  <timestamp value="2021-11-12T12:22:47Z"/>
+  <entry>
+    <fullUrl value="urn:uuid:4C8993E9-8EB7-4E0F-8636-638A553D40C0"/>
+    <resource>
+      <Composition>
+        <id value="4C8993E9-8EB7-4E0F-8636-638A553D40C0"/>
+        <meta>
+          <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ZAEB_Composition|1.1.0"/>
+        </meta>
+        <status value="final"/>
+        <type>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20210131"/>
+            <code value="371525003"/>
+            <display value="Clinical procedure report (record artifact)"/>
+          </coding>
+        </type>
+        <subject>
+          <reference value="urn:uuid:254DE8B1-DCEA-47AA-909C-346FA38D7479"/>
+        </subject>
+        <date value="2021-11-12T12:22:47Z"/>
+        <author>
+          <reference value="urn:uuid:5340E3CA-B90F-40D4-9F09-750D62C8CF6E"/>
+        </author>
+        <title value="Bonushefteintrag"/>
+        <section>
+          <entry>
+            <reference value="71346845-248C-4C1B-939D-8D2A54884751"/>
+          </entry>
+        </section>
+      </Composition>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:254DE8B1-DCEA-47AA-909C-346FA38D7479"/>
+    <resource>
+      <Patient>
+        <id value="254DE8B1-DCEA-47AA-909C-346FA38D7479"/>
+        <meta>
+          <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ZAEB_Patient|1.1.0"/>
+        </meta>
+        <identifier>
+          <type>
+            <coding>
+              <system value="http://fhir.de/CodeSystem/identifier-type-de-basis"/>
+              <code value="GKV"/>
+            </coding>
+          </type>
+          <system value="http://fhir.de/NamingSystem/gkv/kvid-10"/>
+          <value value="X110454966"/>
+        </identifier>
+        <name>
+          <use value="official"/>
+          <family value="Blücher">
+            <extension url="http://hl7.org/fhir/StructureDefinition/humanname-own-name">
+              <valueString value="Blücher"/>
+            </extension>
+          </family>
+          <given value="Heide Anastasia Petra"/>
+          <prefix value="Gräfin">
+            <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier">
+              <valueCode value="AC"/>
+            </extension>
+          </prefix>
+        </name>
+        <birthDate value="1994-02-17"/>
+        <address>
+          <type value="both"/>
+          <line value="Strasse 123a">
+            <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName">
+              <valueString value="Strasse"/>
+            </extension>
+            <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber">
+              <valueString value="123a"/>
+            </extension>
+            <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-additionalLocator">
+              <valueString value="Hinterhof"/>
+            </extension>
+          </line>
+          <city value="Bingen"/>
+          <postalCode value="55411"/>
+          <country value="D"/>
+        </address>
+      </Patient>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:5340E3CA-B90F-40D4-9F09-750D62C8CF6E"/>
+    <resource>
+      <Organization>
+        <id value="5340E3CA-B90F-40D4-9F09-750D62C8CF6E"/>
+        <meta>
+          <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ZAEB_Organization|1.1.0"/>
+        </meta>
+        <identifier>
+          <type>
+            <coding>
+              <system value="http://fhir.de/CodeSystem/identifier-type-de-basis"/>
+              <code value="KZVA"/>
+            </coding>
+          </type>
+          <system value="http://fhir.de/NamingSystem/kzbv/kzvabrechnungsnummer"/>
+          <value value="13"/>
+        </identifier>
+        <name value="ProdPraxis23"/>
+        <address>
+          <type value="both"/>
+          <line value="Eberhard-Anheuser-Straße 333">
+            <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName">
+              <valueString value="Eberhard-Anheuser-Straße"/>
+            </extension>
+            <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber">
+              <valueString value="333"/>
+            </extension>
+          </line>
+          <city value="Bad Kreuznach"/>
+          <postalCode value="55543"/>
+          <country value="D"/>
+        </address>
+      </Organization>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:71346845-248C-4C1B-939D-8D2A54884751"/>
+    <resource>
+      <Observation>
+        <id value="71346845-248C-4C1B-939D-8D2A54884751"/>
+        <meta>
+          <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ZAEB_Observation_Gapless_Documentation|1.1.0"/>
+        </meta>
+        <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_ZAEB_Disclaimer">
+          <valueString value="Die Vertragsparteien sind sich einig, dass der Zahnarzt im Nachhinein für eine falsche Jahresangabe nicht haftbar gemacht werden kann, wenn die Krankenkasse bei der Prüfung eines Heil- und Kostenplanes keinen Bonus oder eine andere Bonusstufe feststellt."/>
+        </extension>
+        <status value="final"/>
+        <code>
+          <text value="Datum, seit dem eine lückenlose Dokumentation in dem Papier-Zahnbonusheft nachweislich vorliegt."/>
+        </code>
+        <subject>
+          <reference value="urn:uuid:254DE8B1-DCEA-47AA-909C-346FA38D7479"/>
+        </subject>
+        <valueDateTime value="2010-10-05"/>
+      </Observation>
+    </resource>
+  </entry>
+</Bundle>
