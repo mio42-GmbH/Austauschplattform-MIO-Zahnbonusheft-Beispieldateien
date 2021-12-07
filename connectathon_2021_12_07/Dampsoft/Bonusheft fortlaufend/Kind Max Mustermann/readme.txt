@@ -1,1 +1,1 @@
-Bonusheft für Kind Max Mustermann von 2011 - 2021 (geboren 2001)
+Bonusheft für Kind Max Mustermann von 2011 - 2021 (geboren 12.07.2001)
