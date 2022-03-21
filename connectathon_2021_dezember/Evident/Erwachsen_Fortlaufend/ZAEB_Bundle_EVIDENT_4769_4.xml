@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bundle xmlns="http://hl7.org/fhir" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <id value="97877373-9767-4A7F-AC44-19618BE6902D"/>
+  <meta>
+    <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ZAEB_Bundle|1.1.0"/>
+  </meta>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:uuid:97877373-9767-4A7F-AC44-19618BE6902D"/>
+  </identifier>
+  <type value="document"/>
+  <timestamp value="2021-12-09T11:47:11Z"/>
+  <entry>
+    <fullUrl value="urn:uuid:67C7D7BD-B5F1-4536-A522-0C71235ECEC5"/>
+    <resource>
+      <Composition>
+        <id value="67C7D7BD-B5F1-4536-A522-0C71235ECEC5"/>
+        <meta>
+          <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ZAEB_Composition|1.1.0"/>
+        </meta>
+        <status value="final"/>
+        <type>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20210131"/>
+            <code value="371525003"/>
+            <display value="Clinical procedure report (record artifact)"/>
+          </coding>
+        </type>
+        <subject>
+          <reference value="urn:uuid:B7647FB4-764A-4F99-8030-2D94B9BA8A2E"/>
+        </subject>
+        <date value="2021-12-09T11:47:11Z"/>
+        <author>
+          <reference value="urn:uuid:C9FE2F6E-6E67-4057-86B3-EE2F374EF223"/>
+        </author>
+        <title value="Bonushefteintrag"/>
+        <section>
+          <entry>
+            <reference value="urn:uuid:E7F5C70A-233C-481B-8175-1357F697BC44"/>
+          </entry>
+        </section>
+      </Composition>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:B7647FB4-764A-4F99-8030-2D94B9BA8A2E"/>
+    <resource>
+      <Patient>
+        <id value="B7647FB4-764A-4F99-8030-2D94B9BA8A2E"/>
+        <meta>
+          <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ZAEB_Patient|1.1.0"/>
+        </meta>
+        <identifier>
+          <type>
+            <coding>
+              <system value="http://fhir.de/CodeSystem/identifier-type-de-basis"/>
+              <code value="GKV"/>
+            </coding>
+          </type>
+          <system value="http://fhir.de/NamingSystem/gkv/kvid-10"/>
+          <value value="X001815471"/>
+        </identifier>
+        <name>
+          <use value="official"/>
+          <family value="Connectathon">
+            <extension url="http://hl7.org/fhir/StructureDefinition/humanname-own-name">
+              <valueString value="Connectathon"/>
+            </extension>
+          </family>
+          <given value="MIO"/>
+        </name>
+        <birthDate value="1998-01-01"/>
+        <address>
+          <type value="both"/>
+          <line value="Highway to ePA 12345 Heaven's door">
+            <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName">
+              <valueString value="Highway to ePA"/>
+            </extension>
+            <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber">
+              <valueString value="12345"/>
+            </extension>
+            <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-additionalLocator">
+              <valueString value="Heaven's door"/>
+            </extension>
+          </line>
+          <city value="Berlin"/>
+          <postalCode value="12349"/>
+          <country value="D"/>
+        </address>
+      </Patient>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:C9FE2F6E-6E67-4057-86B3-EE2F374EF223"/>
+    <resource>
+      <Organization>
+        <id value="C9FE2F6E-6E67-4057-86B3-EE2F374EF223"/>
+        <meta>
+          <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ZAEB_Organization|1.1.0"/>
+        </meta>
+        <identifier>
+          <type>
+            <coding>
+              <system value="http://fhir.de/CodeSystem/identifier-type-de-basis"/>
+              <code value="KZVA"/>
+            </coding>
+          </type>
+          <system value="http://fhir.de/NamingSystem/kzbv/kzvabrechnungsnummer"/>
+          <value value="13"/>
+        </identifier>
+        <name value="ProdPraxis23"/>
+        <address>
+          <type value="both"/>
+          <line value="Eberhard-Anheuser-Straße 333">
+            <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName">
+              <valueString value="Eberhard-Anheuser-Straße"/>
+            </extension>
+            <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber">
+              <valueString value="333"/>
+            </extension>
+          </line>
+          <city value="Bad Kreuznach"/>
+          <postalCode value="55543"/>
+          <country value="D"/>
+        </address>
+      </Organization>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:E7F5C70A-233C-481B-8175-1357F697BC44"/>
+    <resource>
+      <Observation>
+        <id value="E7F5C70A-233C-481B-8175-1357F697BC44"/>
+        <meta>
+          <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ZAEB_Observation_Dental_Check_Up|1.1.0"/>
+        </meta>
+        <status value="final"/>
+        <code>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20210131"/>
+            <code value="63963009"/>
+            <display value="Dental prophylaxis, adult (procedure)">
+              <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
+                <extension url="content">
+                  <valueString value="Zahnärztliche Untersuchung (Erwachsen)"/>
+                </extension>
+              </extension>
+            </display>
+          </coding>
+        </code>
+        <subject>
+          <reference value="urn:uuid:B7647FB4-764A-4F99-8030-2D94B9BA8A2E"/>
+        </subject>
+        <effectiveDateTime value="2017-09-25"/>
+        <valueBoolean value="true"/>
+      </Observation>
+    </resource>
+  </entry>
+</Bundle>

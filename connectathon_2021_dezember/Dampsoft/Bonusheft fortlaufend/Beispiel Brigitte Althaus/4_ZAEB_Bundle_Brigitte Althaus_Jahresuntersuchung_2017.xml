@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Bundle xmlns="http://hl7.org/fhir">
+    <id value="6BE06636-E8E4-461D-AF4C-AED04AEB5911"/>
+    <meta>
+        <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ZAEB_Bundle|1.1.0"/>
+    </meta>
+    <identifier>
+        <system value="urn:ietf:rfc:3986"/>
+        <value value="urn:uuid:6BE06636-E8E4-461D-AF4C-AED04AEB5911"/>
+    </identifier>
+    <type value="document"/>
+    <timestamp value="2021-12-07T16:04:44Z"/>
+    <entry>
+        <fullUrl value="urn:uuid:2CFD0BAF-98CF-4726-A2CF-739A2D66D711"/>
+        <resource>
+            <Composition xmlns="http://hl7.org/fhir">
+                <id value="2CFD0BAF-98CF-4726-A2CF-739A2D66D711"/>
+                <meta>
+                    <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ZAEB_Composition|1.1.0"/>
+                </meta>
+                <status value="final"/>
+                <type>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <version value="http://snomed.info/sct/900000000000207008/version/20210131"/>
+                        <code value="371525003"/>
+                        <display value="Clinical procedure report (record artifact)"/>
+                    </coding>
+                </type>
+                <subject>
+                    <reference value="urn:uuid:6DE094E5-9439-46AC-B719-E2893DAA0E64"/>
+                </subject>
+                <date value="2017-07-29T00:00:00Z"/>
+                <author>
+                    <reference value="urn:uuid:CCBB06BB-8B0E-4A46-A519-B10C5C296C3B"/>
+                </author>
+                <title value="Bonushefteintrag"/>
+                <section>
+                    <entry>
+                        <reference value="urn:uuid:8FF79CC9-28FB-4734-885C-E04460D77C31"/>
+                    </entry>
+                </section>
+            </Composition>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="urn:uuid:6DE094E5-9439-46AC-B719-E2893DAA0E64"/>
+        <resource>
+            <Patient xmlns="http://hl7.org/fhir">
+                <id value="6DE094E5-9439-46AC-B719-E2893DAA0E64"/>
+                <meta>
+                    <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ZAEB_Patient|1.1.0"/>
+                </meta>
+                <identifier>
+                    <type>
+                        <coding>
+                            <system value="http://fhir.de/CodeSystem/identifier-type-de-basis"/>
+                            <code value="GKV"/>
+                        </coding>
+                    </type>
+                    <system value="http://fhir.de/NamingSystem/gkv/kvid-10"/>
+                    <value value="C123456789"/>
+                </identifier>
+                <name>
+                    <use value="official"/>
+                    <text value="Prof. Dr. Brigitte Althaus"/>
+                    <family value="Althaus">
+                        <extension url="http://hl7.org/fhir/StructureDefinition/humanname-own-name">
+                            <valueString value="Althaus"/>
+                        </extension>
+                    </family>
+                    <given value="Brigitte"/>
+                    <prefix value="Prof. Dr.">
+                        <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier">
+                            <valueCode value="AC"/>
+                        </extension>
+                    </prefix>
+                </name>
+                <birthDate value="1978-07-12"/>
+                <address>
+                    <type value="both"/>
+                    <line value="Potsdamer Platz 19 Hinterhof">
+                        <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName">
+                            <valueString value="Potsdamer Platz"/>
+                        </extension>
+                        <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber">
+                            <valueString value="19"/>
+                        </extension>
+                        <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-additionalLocator">
+                            <valueString value="Hinterhof"/>
+                        </extension>
+                    </line>
+                    <city value="Berlin"/>
+                    <postalCode value="10117"/>
+                    <country value="D"/>
+                </address>
+            </Patient>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="urn:uuid:CCBB06BB-8B0E-4A46-A519-B10C5C296C3B"/>
+        <resource>
+            <Organization xmlns="http://hl7.org/fhir">
+                <id value="CCBB06BB-8B0E-4A46-A519-B10C5C296C3B"/>
+                <meta>
+                    <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ZAEB_Organization|1.1.0"/>
+                </meta>
+                <identifier>
+                    <type>
+                        <coding>
+                            <system value="http://fhir.de/CodeSystem/identifier-type-de-basis"/>
+                            <code value="KZVA"/>
+                        </coding>
+                    </type>
+                    <system value="http://fhir.de/NamingSystem/kzbv/kzvabrechnungsnummer"/>
+                    <value value="2400"/>
+                </identifier>
+                <name value="Dr. Wolfram Greifenberg"/>
+                <address>
+                    <type value="both"/>
+                    <line value="Vogelsang 1">
+                        <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName">
+                            <valueString value="Vogelsang"/>
+                        </extension>
+                        <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber">
+                            <valueString value="1"/>
+                        </extension>
+                    </line>
+                    <city value="Damp"/>
+                    <postalCode value="24351"/>
+                    <country value="D"/>
+                </address>
+            </Organization>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="urn:uuid:8FF79CC9-28FB-4734-885C-E04460D77C31"/>
+        <resource>
+            <Observation xmlns="http://hl7.org/fhir">
+                <id value="8FF79CC9-28FB-4734-885C-E04460D77C31"/>
+                <meta>
+                    <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ZAEB_Observation_Dental_Check_Up|1.1.0"/>
+                </meta>
+                <status value="final"/>
+                <code>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <version value="http://snomed.info/sct/900000000000207008/version/20210131"/>
+                        <code value="63963009"/>
+                        <display value="Dental prophylaxis, adult (procedure)">
+                            <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
+                                <extension url="content">
+                                    <valueString value="Zahnärztliche Untersuchung (Erwachsen)"/>
+                                </extension>
+                            </extension>
+                        </display>
+                    </coding>
+                </code>
+                <subject>
+                    <reference value="urn:uuid:6DE094E5-9439-46AC-B719-E2893DAA0E64"/>
+                </subject>
+                <effectiveDateTime value="2017-07-29"/>
+                <valueBoolean value="true"/>
+            </Observation>
+        </resource>
+    </entry>
+</Bundle>
