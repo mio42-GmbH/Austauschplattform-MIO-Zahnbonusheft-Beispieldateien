@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Bundle xmlns="http://hl7.org/fhir">
+	<id value="1c4dfd4c-1faa-428e-864b-a0f9b197f5fc"/>
+	<meta>
+		<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ZAEB_Bundle|1.1.0"/>
+	</meta>
+	<identifier>
+		<system value="urn:ietf:rfc:3986"/>
+		<value value="urn:uuid:1c4dfd4c-1faa-428e-864b-a0f9b197f5fc"/>
+	</identifier>
+	<type value="document"/>
+	<timestamp value="2022-03-23T13:40:24.4411277+01:00"/>
+	<entry>
+		<fullUrl value="http://pvs.ivoris.056055555.local/fhir/Composition/a1489106-8fe6-4c40-90cd-b58f6362a9f4"/>
+		<resource>
+			<Composition>
+				<id value="a1489106-8fe6-4c40-90cd-b58f6362a9f4"/>
+				<meta>
+					<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ZAEB_Composition|1.1.0"/>
+				</meta>
+				<status value="final"/>
+				<type>
+					<coding>
+						<system value="http://snomed.info/sct"/>
+						<version value="http://snomed.info/sct/900000000000207008/version/20210131"/>
+						<code value="371525003"/>
+						<display value="Clinical procedure report (record artifact)"/>
+					</coding>
+				</type>
+				<subject>
+					<reference value="Patient/dbddb619-126e-43c4-a5f6-100a657e7ac1"/>
+				</subject>
+				<date value="2022-03-23"/>
+				<author>
+					<reference value="Organization/7df6e649-f0e6-4bf5-88c8-880412ac05a9"/>
+				</author>
+				<title value="Bonushefteintrag"/>
+				<section>
+					<entry>
+						<reference value="Observation/3e1ad01f-60c1-4153-9054-190dcdd4ef55"/>
+					</entry>
+				</section>
+			</Composition>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="http://pvs.ivoris.056055555.local/fhir/Patient/dbddb619-126e-43c4-a5f6-100a657e7ac1"/>
+		<resource>
+			<Patient>
+				<id value="dbddb619-126e-43c4-a5f6-100a657e7ac1"/>
+				<meta>
+					<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ZAEB_Patient|1.1.0"/>
+				</meta>
+				<identifier>
+					<type>
+						<coding>
+							<system value="http://fhir.de/CodeSystem/identifier-type-de-basis"/>
+							<code value="GKV"/>
+						</coding>
+					</type>
+					<system value="http://fhir.de/NamingSystem/gkv/kvid-10"/>
+					<value value="X110498843"/>
+				</identifier>
+				<name>
+					<use value="official"/>
+					<text value="Sebastian Robin Francesco Graf von und zu Münchhausen-Hohenfels"/>
+					<family value="Graf von und zu Münchhausen-Hohenfels">
+						<extension url="http://hl7.org/fhir/StructureDefinition/humanname-own-name">
+							<valueString value="Münchhausen-Hohenfels"/>
+						</extension>
+						<extension url="http://fhir.de/StructureDefinition/humanname-namenszusatz">
+							<valueString value="Graf"/>
+						</extension>
+						<extension url="http://hl7.org/fhir/StructureDefinition/humanname-own-prefix">
+							<valueString value="von und zu"/>
+						</extension>
+					</family>
+					<given value="Sebastian Robin Francesco"/>
+				</name>
+				<birthDate value="1961-03-02"/>
+				<address>
+					<type value="both"/>
+					<line value="Otto-Hahn-Str. 99">
+						<extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber">
+							<valueString value="99"/>
+						</extension>
+						<extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName">
+							<valueString value="Otto-Hahn-Str."/>
+						</extension>
+					</line>
+					<city value="Gersthofen"/>
+					<postalCode value="86368"/>
+					<country value="D"/>
+				</address>
+			</Patient>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="http://pvs.ivoris.056055555.local/fhir/Observation/3e1ad01f-60c1-4153-9054-190dcdd4ef55"/>
+		<resource>
+			<Observation>
+				<id value="3e1ad01f-60c1-4153-9054-190dcdd4ef55"/>
+				<meta>
+					<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ZAEB_Observation_Dental_Check_Up|1.1.0"/>
+				</meta>
+				<status value="final"/>
+				<code>
+					<coding>
+						<system value="http://snomed.info/sct"/>
+						<version value="http://snomed.info/sct/900000000000207008/version/20210131"/>
+						<code value="63963009"/>
+						<display value="Dental prophylaxis, adult (procedure)">
+							<extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
+								<extension url="content">
+									<valueString value="Dental prophylaxis, adult (procedure)"/>
+								</extension>
+							</extension>
+						</display>
+					</coding>
+				</code>
+				<subject>
+					<reference value="Patient/dbddb619-126e-43c4-a5f6-100a657e7ac1"/>
+				</subject>
+				<effectiveDateTime value="2018-01-18"/>
+				<valueBoolean value="true"/>
+			</Observation>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="http://pvs.ivoris.056055555.local/fhir/Organization/7df6e649-f0e6-4bf5-88c8-880412ac05a9"/>
+		<resource>
+			<Organization>
+				<id value="7df6e649-f0e6-4bf5-88c8-880412ac05a9"/>
+				<meta>
+					<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ZAEB_Organization|1.1.0"/>
+				</meta>
+				<identifier>
+					<type>
+						<coding>
+							<system value="http://fhir.de/CodeSystem/identifier-type-de-basis"/>
+							<code value="KZVA"/>
+						</coding>
+					</type>
+					<system value="http://fhir.de/NamingSystem/kzbv/kzvabrechnungsnummer"/>
+					<value value="056055555"/>
+				</identifier>
+				<name value="Computer Konkret AG"/>
+				<telecom>
+					<system value="phone"/>
+					<value value="03745-782431"/>
+				</telecom>
+				<telecom>
+					<system value="fax"/>
+					<value value="03745-782419"/>
+				</telecom>
+				<telecom>
+					<system value="email"/>
+					<value value="hotline@computer-konkret.de"/>
+				</telecom>
+				<address>
+					<type value="both"/>
+					<line value="Theodor-Körner-Straße 6">
+						<extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber">
+							<valueString value="6"/>
+						</extension>
+						<extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName">
+							<valueString value="Theodor-Körner-Straße"/>
+						</extension>
+					</line>
+					<city value="Falkenstein"/>
+					<postalCode value="08223"/>
+					<country value="D"/>
+				</address>
+			</Organization>
+		</resource>
+	</entry>
+</Bundle>
