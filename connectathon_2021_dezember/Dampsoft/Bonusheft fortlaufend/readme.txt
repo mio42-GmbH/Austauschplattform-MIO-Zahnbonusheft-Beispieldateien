@@ -1,1 +1,0 @@
-Bonusheft mit fortlaufenden Daten
