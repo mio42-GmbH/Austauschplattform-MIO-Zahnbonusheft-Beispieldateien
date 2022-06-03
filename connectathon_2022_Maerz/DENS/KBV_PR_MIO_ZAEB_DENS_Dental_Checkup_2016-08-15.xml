@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Bundle xmlns="http://hl7.org/fhir">
+    <id value="df07c1d7-ec3d-431a-a1fc-d8401abcebe9" />
+    <meta>
+        <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ZAEB_Bundle|1.1.0" />
+    </meta>
+    <identifier>
+        <system value="urn:ietf:rfc:3986" />
+        <value value="urn:uuid:24d0eb02-87c1-4c28-ab2a-0874698c7848" />
+    </identifier>
+    <type value="document" />
+    <timestamp value="2022-03-21T14:45:26Z" />
+    <entry>
+        <fullUrl value="urn:uuid:f34966b8-5cf8-402b-aec6-80bde8b2fe83" />
+        <resource>
+            <Composition>
+                <id value="f34966b8-5cf8-402b-aec6-80bde8b2fe83" />
+                <meta>
+                    <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ZAEB_Composition|1.1.0" />
+                </meta>
+                <status value="final" />
+                <type>
+                    <coding>
+                        <system value="http://snomed.info/sct" />
+                        <version value="http://snomed.info/sct/900000000000207008/version/20210131" />
+                        <code value="371525003" />
+                        <display value="Clinical procedure report (record artifact)" />
+                    </coding>
+                </type>
+                <subject>
+                    <reference value="urn:uuid:ad8a0374-eaad-4288-82c7-787961c1a283" />
+                </subject>
+                <date value="2022-03-21" />
+                <author>
+                    <reference value="urn:uuid:d791f87c-977e-488e-aaec-1210424e7e9f" />
+                </author>
+                <title value="Bonushefteintrag" />
+                <section>
+                    <entry>
+                        <reference value="urn:uuid:f08c3b89-b410-4115-8962-b47d73af28e3" />
+                    </entry>
+                </section>
+            </Composition>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="urn:uuid:ad8a0374-eaad-4288-82c7-787961c1a283" />
+        <resource>
+            <Patient>
+                <id value="ad8a0374-eaad-4288-82c7-787961c1a283" />
+                <meta>
+                    <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ZAEB_Patient|1.1.0" />
+                </meta>
+                <identifier>
+                    <type>
+                        <coding>
+                            <system value="http://fhir.de/CodeSystem/identifier-type-de-basis" />
+                            <code value="GKV" />
+                        </coding>
+                    </type>
+                    <system value="http://fhir.de/NamingSystem/gkv/kvid-10" />
+                    <value value="X110492446" />
+                </identifier>
+                <name>
+                    <use value="official" />
+                    <family value="Frônkenstein">
+                        <extension url="http://hl7.org/fhir/StructureDefinition/humanname-own-name">
+                            <valueString value="Frônkenstein" />
+                        </extension>
+                    </family>
+                    <given value="Leonie" />
+                    <prefix value="Dr.">
+                        <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier">
+                            <valueCode value="AC" />
+                        </extension>
+                    </prefix>
+                </name>
+                <birthDate value="1969-10-10" />
+                <address>
+                    <type value="both" />
+                    <line value="Tangstedter Landstr. 49">
+                        <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName">
+                            <valueString value="Tangstedter Landstr." />
+                        </extension>
+                        <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber">
+                            <valueString value="49" />
+                        </extension>
+                    </line>
+                    <city value="Hamburg" />
+                    <postalCode value="22415" />
+                    <country value="D" />
+                </address>
+            </Patient>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="urn:uuid:d791f87c-977e-488e-aaec-1210424e7e9f" />
+        <resource>
+            <Organization>
+                <id value="d791f87c-977e-488e-aaec-1210424e7e9f" />
+                <meta>
+                    <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ZAEB_Organization|1.1.0" />
+                </meta>
+                <identifier>
+                    <type>
+                        <coding>
+                            <system value="http://fhir.de/CodeSystem/identifier-type-de-basis" />
+                            <code value="KZVA" />
+                        </coding>
+                    </type>
+                    <system value="http://fhir.de/NamingSystem/kzbv/kzvabrechnungsnummer" />
+                    <value value="055001233" />
+                </identifier>
+                <name value="Zahnarztpraxis DENS Office" />
+                <telecom>
+                    <system value="phone" />
+                    <value value="77777 789" />
+                </telecom>
+                <address>
+                    <type value="both" />
+                    <line value="Musterarztstraße 14">
+                        <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName">
+                            <valueString value="Musterarztstraße" />
+                        </extension>
+                        <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber">
+                            <valueString value="14" />
+                        </extension>
+                    </line>
+                    <city value="Mustersleben" />
+                    <postalCode value="77777" />
+                    <country value="D" />
+                </address>
+            </Organization>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="urn:uuid:f08c3b89-b410-4115-8962-b47d73af28e3" />
+        <resource>
+            <Observation>
+                <id value="f08c3b89-b410-4115-8962-b47d73af28e3" />
+                <meta>
+                    <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ZAEB_Observation_Dental_Check_Up|1.1.0" />
+                </meta>
+                <status value="final" />
+                <code>
+                    <coding>
+                        <system value="http://snomed.info/sct" />
+                        <version value="http://snomed.info/sct/900000000000207008/version/20210131" />
+                        <code value="63963009" />
+                        <display value="Dental prophylaxis, adult (procedure)" />
+                    </coding>
+                </code>
+                <subject>
+                    <reference value="urn:uuid:ad8a0374-eaad-4288-82c7-787961c1a283" />
+                </subject>
+                <effectiveDateTime value="2016-08-15" />
+                <valueBoolean value="true" />
+            </Observation>
+        </resource>
+    </entry>
+</Bundle>

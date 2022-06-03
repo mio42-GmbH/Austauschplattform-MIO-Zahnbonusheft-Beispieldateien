@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Bundle xmlns="http://hl7.org/fhir">
+    <id value="B5009F7E-F17C-4CA4-82B7-0A0BB4FE3B9D"/>
+    <meta>
+        <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ZAEB_Bundle|1.1.0"/>
+    </meta>
+    <identifier>
+        <system value="urn:ietf:rfc:3986"/>
+        <value value="urn:uuid:B5009F7E-F17C-4CA4-82B7-0A0BB4FE3B9D"/>
+    </identifier>
+    <type value="document"/>
+    <timestamp value="2021-12-07T18:17:22Z"/>
+    <entry>
+        <fullUrl value="urn:uuid:C9FE8E62-E59C-4C19-A0F0-25B9DDDB5E57"/>
+        <resource>
+            <Composition xmlns="http://hl7.org/fhir">
+                <id value="C9FE8E62-E59C-4C19-A0F0-25B9DDDB5E57"/>
+                <meta>
+                    <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ZAEB_Composition|1.1.0"/>
+                </meta>
+                <status value="final"/>
+                <type>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <version value="http://snomed.info/sct/900000000000207008/version/20210131"/>
+                        <code value="371525003"/>
+                        <display value="Clinical procedure report (record artifact)"/>
+                    </coding>
+                </type>
+                <subject>
+                    <reference value="urn:uuid:4B9A3FFD-F873-4C15-B676-063777F323C5"/>
+                </subject>
+                <date value="2018-04-05T00:00:00Z"/>
+                <author>
+                    <reference value="urn:uuid:CCBB06BB-8B0E-4A46-A519-B10C5C296C3B"/>
+                </author>
+                <title value="Bonushefteintrag"/>
+                <section>
+                    <entry>
+                        <reference value="urn:uuid:5B2020AC-C9AC-4685-A768-632E4367516D"/>
+                    </entry>
+                </section>
+            </Composition>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="urn:uuid:4B9A3FFD-F873-4C15-B676-063777F323C5"/>
+        <resource>
+            <Patient xmlns="http://hl7.org/fhir">
+                <id value="4B9A3FFD-F873-4C15-B676-063777F323C5"/>
+                <meta>
+                    <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ZAEB_Patient|1.1.0"/>
+                </meta>
+                <identifier>
+                    <type>
+                        <coding>
+                            <system value="http://fhir.de/CodeSystem/identifier-type-de-basis"/>
+                            <code value="GKV"/>
+                        </coding>
+                    </type>
+                    <system value="http://fhir.de/NamingSystem/gkv/kvid-10"/>
+                    <value value="D123456789"/>
+                </identifier>
+                <name>
+                    <use value="official"/>
+                    <text value="Max Mustermann"/>
+                    <family value="Mustermann">
+                        <extension url="http://hl7.org/fhir/StructureDefinition/humanname-own-name">
+                            <valueString value="Mustermann"/>
+                        </extension>
+                    </family>
+                    <given value="Max"/>
+                </name>
+                <birthDate value="2001-07-12"/>
+                <address>
+                    <type value="both"/>
+                    <line value="Musterstraße 234 3. OG">
+                        <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName">
+                            <valueString value="Musterstraße"/>
+                        </extension>
+                        <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber">
+                            <valueString value="234"/>
+                        </extension>
+                        <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-additionalLocator">
+                            <valueString value="3. OG"/>
+                        </extension>
+                    </line>
+                    <city value="Musweiler"/>
+                    <postalCode value="54534"/>
+                    <country value="D"/>
+                </address>
+            </Patient>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="urn:uuid:CCBB06BB-8B0E-4A46-A519-B10C5C296C3B"/>
+        <resource>
+            <Organization xmlns="http://hl7.org/fhir">
+                <id value="CCBB06BB-8B0E-4A46-A519-B10C5C296C3B"/>
+                <meta>
+                    <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ZAEB_Organization|1.1.0"/>
+                </meta>
+                <identifier>
+                    <type>
+                        <coding>
+                            <system value="http://fhir.de/CodeSystem/identifier-type-de-basis"/>
+                            <code value="KZVA"/>
+                        </coding>
+                    </type>
+                    <system value="http://fhir.de/NamingSystem/kzbv/kzvabrechnungsnummer"/>
+                    <value value="2400"/>
+                </identifier>
+                <name value="Dr. Wolfram Greifenberg"/>
+                <address>
+                    <type value="both"/>
+                    <line value="Vogelsang 1">
+                        <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName">
+                            <valueString value="Vogelsang"/>
+                        </extension>
+                        <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber">
+                            <valueString value="1"/>
+                        </extension>
+                    </line>
+                    <city value="Damp"/>
+                    <postalCode value="24351"/>
+                    <country value="D"/>
+                </address>
+            </Organization>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="urn:uuid:5B2020AC-C9AC-4685-A768-632E4367516D"/>
+        <resource>
+            <Observation xmlns="http://hl7.org/fhir">
+                <id value="5B2020AC-C9AC-4685-A768-632E4367516D"/>
+                <meta>
+                    <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ZAEB_Observation_Dental_Check_Up|1.1.0"/>
+                </meta>
+                <status value="final"/>
+                <code>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <version value="http://snomed.info/sct/900000000000207008/version/20210131"/>
+                        <code value="2115003"/>
+                        <display value="Dental prophylaxis, children (procedure)">
+                            <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
+                                <extension url="content">
+                                    <valueString value="Individualprophylaxe (Kind)"/>
+                                </extension>
+                            </extension>
+                        </display>
+                    </coding>
+                </code>
+                <subject>
+                    <reference value="urn:uuid:4B9A3FFD-F873-4C15-B676-063777F323C5"/>
+                </subject>
+                <effectiveDateTime value="2018-04-05"/>
+                <valueBoolean value="true"/>
+            </Observation>
+        </resource>
+    </entry>
+</Bundle>
